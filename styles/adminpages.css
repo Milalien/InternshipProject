@@ -1,0 +1,318 @@
+:root {
+    --logoBlue: #4A6AB4;
+    --logoGrey: #9A9A9A;
+    --bgGrey: #D8D8D8;
+    --crdGrey: #F1F1F1;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "Karla", sans-serif !important;
+    background-color: var(--bgGrey);
+}
+
+.adminPage {
+    min-height: 100%;
+    background-color: var(--bgGrey);
+
+
+    .adminHeader {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 50px;
+        background-color: var(--logoBlue);
+        color: white;
+
+        .btn {
+            background-color: white;
+            color: black;
+        }
+
+        .btn:hover {
+            background-color: black;
+            color: white;
+        }
+    }
+
+    .menu {
+        float: left;
+        border: 1px solid #000;
+        border-bottom-right-radius: 5px;
+        width: 20%;
+    }
+
+    .menu a {
+        display: block;
+        border: 1px solid #000;
+        color: white !important;
+        padding: 10px;
+        text-decoration: none;
+        background-color: var(--logoBlue);
+    }
+
+    .menu a:hover {
+        background-color: #2c4378;
+    }
+
+    .main {
+        text-align: center;
+        width: 80%;
+        float: right;
+        margin: 20px auto;
+
+        h1 {
+            margin-bottom: 20px;
+        }
+    }
+
+    .form {
+        background-color: var(--crdGrey);
+        border: 2px solid black;
+        padding: 10px;
+        margin: auto auto 20px auto;
+        border-radius: 5px;
+
+
+        label {
+            padding: 5px;
+        }
+
+        input.submit {
+            width: 100px;
+            margin:auto;
+            background-color: var(--logoBlue);
+            color: white;
+            border-radius: 5px;
+            padding: 5px;
+            border: none;
+        }
+
+        input.submit:hover {
+            background-color: black;
+            cursor: pointer;
+        }
+    }
+
+    .subPageForms,
+    .adForms {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    .editSubPage,
+    .editAds {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .form.changeimg {
+        margin: 20px auto;
+        max-width: 80%;
+    }
+
+    .form.subPage,
+    .form.ads {
+        margin: 10px;
+        height: fit-content;
+
+        form {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+        }
+
+        form>div {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            padding: 5px;
+        }
+
+
+
+    }
+
+    .cabinimages {
+        display: flex;
+        flex-flow: row nowrap;
+        max-width: 90%;
+    }
+
+    @media screen and (max-width: 1200px) {
+        .cabinimages {
+            display: flex;
+            flex-flow: column;
+
+        }
+
+        .cabinimages>div {
+            width: 100% !important;
+
+        }
+
+        .sliderForms.subslider {
+            display: flex;
+            flex-flow: column nowrap !important;
+        }
+    }
+
+    .cabinimages>div {
+        width: 49%;
+        margin: 5px;
+    }
+
+    .form.index {
+        max-width: 90%;
+
+        form>div {
+            padding: 10px;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+        }
+
+        textarea {
+            width: fit-content;
+            min-width: 100px;
+            margin: auto;
+        }
+
+    }
+
+    .sliderForms.subslider {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .sliderForms {
+        display:flex;
+        flex-direction:row;
+        margin: auto;
+       
+
+    }
+
+    .form.addSlide,
+    .form.order {
+        width: fit-content;
+        height: fit-content;
+        margin: 0 auto 20px auto;
+    }
+    #sortable li {
+        min-height: 100px;
+    }
+    .ui-state-highlight{
+        background-color:rgb(0, 0, 0, 0.1);
+        border-bottom:dashed 1px rgb(0, 0, 0, 0.5);
+        border-top:dashed 1px rgb(0, 0, 0, 0.5);
+        margin-bottom:5px;
+    }
+
+    #sortable {
+        padding: 0;
+    }
+
+    .form.order {
+        .btn {
+            min-width: 30px;
+            background-color: #991509;
+            color: white;
+            border-radius: 5px;
+            padding: 3px;
+            margin: 5px;
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: black;
+            color: #b3190b;
+
+        }
+
+        width: 49%;
+
+
+        img {
+            width: 50%;
+
+            margin: 0 auto 5px auto;
+        }
+
+        li {
+            list-style: none;
+        }
+    }
+
+
+}
+
+.loginPage {
+    height: 100%;
+    background-color: var(--bgGrey);
+    display: flex;
+    flex-direction: column;
+
+    .main {
+        border-radius: 10px;
+        color: white;
+        background-color: var(--logoBlue);
+        max-width: 80%;
+        padding: 20px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main form {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    input {
+        border-radius: 10px;
+        background-color: white;
+        color: black;
+        border: none;
+        padding: 10px;
+        margin: 5px;
+
+    }
+
+    button {
+        padding: 10px;
+        margin: 5px;
+
+        background-color: white;
+        color: black;
+        text-transform: uppercase;
+        border-radius: 10px;
+        border: none;
+        font-size: large;
+        font-weight: 600;
+    }
+
+    button:hover {
+        background-color: var(--logoGrey);
+    }
+
+}
