@@ -27,7 +27,7 @@ include "header.php";
             ".$texts["laatikko1"]."
         </div>
         <div class='action'>
-            <a class='btn' href='fishandwaterresearch.php' role='button'>".$texts["napit"]."</a>
+            <a class='btn' href='service1.php' role='button'>".$texts["napit"]."</a>
         </div>
     </div>
     <div class='crd'>

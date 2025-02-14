@@ -32,7 +32,7 @@ $stmt->execute();
 $result = $stmt->get_result();
 $info = $result->fetch_array(MYSQLI_ASSOC);
 
-echo "<div class='editSubPage'><h1>Kala- ja vesistötutkimus-sivun muokkaus</h1><div class='subPageForms'><div class='form subPage'>";
+echo "<div class='editSubPage'><h1>Palvelu 1 sivun muokkaus</h1><div class='subPageForms'><div class='form subPage'>";
 switch($lang){
   case "fi":
     echo "<h4>Suomenkieliset tekstit:</h4>";

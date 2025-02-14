@@ -1,10 +1,10 @@
 <?php
-
+// HERE WOULD BE THE CODE FOR THE CONFIG FILE
 
 define("SQL_HOST", "localhost");
-define("SQL_DB", "milalienxo_karels");
-define("SQL_USER", "milalienxo_karels");
-define("SQL_PWD", "5E[46!v{VgMUP55mg6");
+define("SQL_DB", "XXXX");
+define("SQL_USER", "XXXX");
+define("SQL_PWD", "XXXXXXX");
 
 
 
