@@ -40,7 +40,7 @@
 
 <div class="header">
             <div class="logo-img">
-                <img src="images/kalatalouslogoVarillinen 1.png" alt="logo" class="img-fluid">
+                <img src="images/logo.png" alt="logo" class="img-fluid">
             </div>
             <div id="ylaKaruselli" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 
@@ -104,7 +104,7 @@
                         <?=$header['pudotusvalikko'];?>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="fishandwaterresearch.php"><?=$header['alavalikko1'];?></a></li>
+                        <li><a class="dropdown-item" href="fwrs.php"><?=$header['alavalikko1'];?></a></li>
                         <li><a class="dropdown-item" href="cabinrent.php"><?=$header['alavalikko2'];?></a></li>
                         <li><a class="dropdown-item" href="naturetrips.php"><?=$header['alavalikko3'];?></a></li>
                     </ul>

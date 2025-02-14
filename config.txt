@@ -1,0 +1,163 @@
+Here is the configuration of the database in the original project.
+
+CREATE DATABASE internship_projectDB;
+
+CREATE TABLE kayttaja (
+    id INT NOT NULL AUTO_INCREMENT,
+    tunnus TEXT,
+    salasana TEXT
+);
+
+CREATE TABLE etusivu_tekstit (
+    id INT NOT NULL AUTO_INCREMENT,
+    kieli VARCHAR(2),
+    esittelyteksti TEXT,
+    laatikko1 TEXT,
+    laatikko2 TEXT,
+    laatikko3 TEXT,
+    napit TEXT NOT NULL
+);
+
+CREATE TABLE slider_kuvat (
+    id INT NOT NULL AUTO_INCREMENT,
+    jarjestys INT NOT NULL,
+    kuva TEXT
+);
+
+CREATE TABLE ylavalikko (
+    id INT NOT NULL AUTO_INCREMENT,
+    kieli VARCHAR(2),
+    valikko1 TEXT,
+    valikko2 TEXT,
+    valikko3 TEXT,
+    pudotusvalikko TEXT,
+    alavalikko1 TEXT,
+    alavalikko2 TEXT,
+    alavalikko3 TEXT,
+    valikko4 TEXT,
+
+);
+
+CREATE TABLE mainoslaatikot (
+    id INT NOT NULL AUTO_INCREMENT,
+    kieli VARCHAR(2),
+    mokkiOtsikko TEXT,
+    mokkiTeksti TEXT,
+    mokkiNappi1 TEXT,
+    airbnb TEXT,
+    mokkiNappi2 TEXT,
+    matkaOtsikko TEXT,
+    matkaTeksti TEXT,
+    matkaNappi TEXT
+);
+
+CREATE TABLE matkat_sivu (
+    id INT NOT NULL AUTO_INCREMENT,
+    kieli VARCHAR(2),
+    esittelyteksti TEXT,
+    alaOtsikko TEXT
+);
+
+CREATE TABLE matka_slider_kuvat (
+    id INT NOT NULL AUTO_INCREMENT,
+    jarjestys INT NOT NULL,
+    kuva TEXT
+);
+
+CREATE TABLE mokkivuokraus_sivu (
+    id INT NOT NULL AUTO_INCREMENT,
+    kieli VARCHAR(2),
+    ylaOtsikko TEXT,
+    alaOtsikko1 TEXT,
+    alaOtsikko2 TEXT,
+    kuva1 TEXT,
+    kuva2 TEXT,
+    esittelyteksti TEXT,
+    mokki1otsikko TEXT,
+    mokki1kuva TEXT,
+    mokki1kuvaus TEXT,
+    mokki1nappi TEXT,
+    mokki2otsikko TEXT,
+    mokki2kuva TEXT,
+    mokki2kuvaus TEXT,
+    mokki2nappi TEXT,
+);
+
+CREATE TABLE mokki1_sivu (
+    id INT NOT NULL AUTO_INCREMENT,
+    kieli VARCHAR(2),
+    ylaOtsikko TEXT,
+    video TEXT,
+    esittelyteksti TEXT,
+    nappi1 TEXT,
+    varausOsoite TEXT,
+    nappi2 TEXT,
+    hinnasto TEXT,
+    alaOtsikko1 TEXT,
+    sijainti TEXT,
+    kartta TEXT,
+    alaOtsikko2 TEXT
+);
+
+CREATE TABLE mokki1_slider_kuvat (
+    id INT NOT NULL AUTO_INCREMENT,
+    jarjestys INT NOT NULL,
+    kuva TEXT
+);
+
+CREATE TABLE mokki2_sivu (
+    id INT NOT NULL AUTO_INCREMENT,
+    kieli VARCHAR(2),
+    ylaOtsikko TEXT,
+    video TEXT,
+    esittelyteksti TEXT,
+    nappi1 TEXT,
+    varausOsoite TEXT,
+    nappi2 TEXT,
+    hinnasto TEXT,
+    alaOtsikko1 TEXT,
+    sijainti TEXT,
+    kartta TEXT,
+    alaOtsikko2 TEXT
+
+);
+
+CREATE TABLE mokki2_slider_kuvat (
+    id INT NOT NULL AUTO_INCREMENT,
+    jarjestys INT NOT NULL,
+    kuva TEXT
+);
+
+CREATE TABLE omaesittely (
+    id INT NOT NULL AUTO_INCREMENT,
+    kieli VARCHAR(2),
+    otsikko TEXT,
+    esittelyteksti TEXT,
+    kuva TEXT
+);
+
+CREATE TABLE tutkimus_sivu (
+    id INT NOT NULL AUTO_INCREMENT,
+    kieli VARCHAR(2),
+    otsikko TEXT,
+    esittelyteksti TEXT,
+    kuva TEXT
+);
+
+CREATE TABLE yhteystiedot_sivu (
+    id INT NOT NULL AUTO_INCREMENT,
+    kieli VARCHAR(2),
+    otsikko TEXT,
+    yritysNimi TEXT,
+    ytunnus TEXT,
+    yhteystiedot TEXT,
+    postiosOtsikko TEXT
+);
+
+CREATE TABLE yritysesittely (
+    id INT NOT NULL AUTO_INCREMENT,
+    kieli VARCHAR(2),
+    otsikko TEXT,
+    esittelyteksti TEXT,
+    kuva TEXT
+);
